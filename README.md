@@ -1,10 +1,8 @@
 # Data Structure and Algorithms Problems
 
 <p align="center"> 
-<img height="100" src="https://www.springboard.com/blog/wp-content/uploads/2020/07/what-are-data-structures-and-algorithms.png">
+<img height="450" width="900" src="https://cdn.educba.com/academy/wp-content/uploads/2015/08/Data-Structures-and-Algorithms-C-1.jpg">
 </p>
-
-**Note: Some of the code here is old and was written when I was learning C++. It might be possible that code is not safe or making wrong assumptions. Please use with caution. Pull requests are always welcome.**
 
 ### LinkedList Problems
 
