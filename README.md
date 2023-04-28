@@ -165,15 +165,6 @@
   - [বাইনারি সার্চ ট্রি - ৩ (ভিডিও)](https://youtu.be/IAHqCl5b4fE) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
   - [বাইনারি সার্চ ট্রি - ৪(ভিডিও)](https://youtu.be/F2uwPe3GaVU) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
 
-- হ্যাশটেবিল (HashTable)
-
-  - [হ্যাশটেবিল (Hashtable)](https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE/%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6-hash-%E0%A6%8F%E0%A6%AC%E0%A6%82-%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%82-hashing-12b7cb6056b8) - [আলাভোলা](https://medium.com/@amialavola)
-
-- ডিসজয়েন্ট সেট (Disjoint Set)
-
-  - [ডিসজয়েন্ট সেট(ইউনিয়ন ফাইন্ড)](http://www.shafaetsplanet.com/planetcoding/?p=763) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-  - [Union Find Algorithm](http://shakilcompetitiveprogramming.blogspot.nl/2014/01/union-find-algorithm-union-find.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
-
 - ট্রাই ট্রি (Trie)
 
   - [ট্রাই(প্রিফিক্স ট্রি/রেডিক্স ট্রি)](http://www.shafaetsplanet.com/planetcoding/?p=1679) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
@@ -195,6 +186,15 @@
 - বাইনারি ইনডেক্সড ট্রি (Binary Indexed Tree)
 
   - [বাইনারি ইনডেক্সড ট্রি](http://www.shafaetsplanet.com/planetcoding/?p=1961) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+
+- হ্যাশটেবিল (HashTable)
+
+  - [হ্যাশটেবিল (Hashtable)](https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE/%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6-hash-%E0%A6%8F%E0%A6%AC%E0%A6%82-%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%82-hashing-12b7cb6056b8) - [আলাভোলা](https://medium.com/@amialavola)
+
+- ডিসজয়েন্ট সেট (Disjoint Set)
+
+  - [ডিসজয়েন্ট সেট(ইউনিয়ন ফাইন্ড)](http://www.shafaetsplanet.com/planetcoding/?p=763) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+  - [Union Find Algorithm](http://shakilcompetitiveprogramming.blogspot.nl/2014/01/union-find-algorithm-union-find.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
 
 - সাফিক্স এ্যারে(Suffix Array)
 
