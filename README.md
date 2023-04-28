@@ -268,14 +268,14 @@
 - [ট্রাভেলিং সেলসম্যান](https://www.shawonruet.com/2019/12/traveling-salesman-problem-step-by-step.html) - [আসাদুল্লাহ শাওন](https://web.facebook.com/ashadullah.shawon)
 - [2-SAT](http://shakilcompetitiveprogramming.blogspot.nl/2014/08/blog-post.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
 
-- ট্রি (Tree)
+### ট্রি (Tree)
 
-  - [ট্রি ডেটা স্ট্রাকচার](http://hellohasan.com/category/data-structure/tree/tree-basic-concept/) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
-  - [ট্রি - ১ (Tree - 1) - ট্রি-এর প্রাথমিক ধারণা (ভিডিও)](https://youtu.be/0I1JVXbHpec) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [ট্রি - ২ (Tree - 2) - কোনটি ট্রি কোনটি নয়? (ভিডিও)](https://youtu.be/Rz93CQd7jXc) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি প্রিঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/p0ltqTz93Nk) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি পোস্টঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/zd5ayCGPQXA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি ইনঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/D9cvhd-jPGs) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+- [ট্রি ডেটা স্ট্রাকচার](http://hellohasan.com/category/data-structure/tree/tree-basic-concept/) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
+- [ট্রি - ১ (Tree - 1) - ট্রি-এর প্রাথমিক ধারণা (ভিডিও)](https://youtu.be/0I1JVXbHpec) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+- [ট্রি - ২ (Tree - 2) - কোনটি ট্রি কোনটি নয়? (ভিডিও)](https://youtu.be/Rz93CQd7jXc) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+- [বাইনারি ট্রি প্রিঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/p0ltqTz93Nk) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+- [বাইনারি ট্রি পোস্টঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/zd5ayCGPQXA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+- [বাইনারি ট্রি ইনঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/D9cvhd-jPGs) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
 
 - বাইনারী সার্চ ট্রি (Binary Search Tree)
 
