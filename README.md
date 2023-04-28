@@ -148,64 +148,6 @@
   - [TERNARY SEARCH](http://shoshikkha.com/archives/4332) - [রেদওয়ান আহমেদ]()
   - [টারনারি সার্চ ও তার অ্যালগরিদম](https://iishanto.com/ternary-search-bangla-tutorial/) - [শরিফ হাসান](https://facebook.com/io.shanto)
 
-- ট্রি (Tree)
-
-  - [ট্রি ডেটা স্ট্রাকচার](http://hellohasan.com/category/data-structure/tree/tree-basic-concept/) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
-  - [ট্রি - ১ (Tree - 1) - ট্রি-এর প্রাথমিক ধারণা (ভিডিও)](https://youtu.be/0I1JVXbHpec) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [ট্রি - ২ (Tree - 2) - কোনটি ট্রি কোনটি নয়? (ভিডিও)](https://youtu.be/Rz93CQd7jXc) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি প্রিঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/p0ltqTz93Nk) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি পোস্টঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/zd5ayCGPQXA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি ট্রি ইনঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/D9cvhd-jPGs) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-
-- বাইনারী সার্চ ট্রি (Binary Search Tree)
-
-  - [বাইনারি সার্চ ট্রি](http://hellohasan.com/category/data-structure/tree/binary-search-tree-bst) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
-  - [বাইনারি সার্চ ট্রি - ১ (ভিডিও)](https://youtu.be/FpekDm8ztVA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি সার্চ ট্রি - ২ (ভিডিও)](https://youtu.be/PrHoIGnU3c0) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি সার্চ ট্রি - ৩ (ভিডিও)](https://youtu.be/IAHqCl5b4fE) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-  - [বাইনারি সার্চ ট্রি - ৪(ভিডিও)](https://youtu.be/F2uwPe3GaVU) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
-
-- ট্রাই ট্রি (Trie)
-
-  - [ট্রাই(প্রিফিক্স ট্রি/রেডিক্স ট্রি)](http://www.shafaetsplanet.com/planetcoding/?p=1679) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-  - [ট্রাই ট্রি ( Trie Tree )](http://blog.faiyaz.info/%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%87-%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%bf-trie-tree/) - [আহমাদ ফাইয়াজ](https://www.facebook.com/faiyaz26s)
-
-- সেগমেন্ট ট্রি (Segment Tree)
-
-  - [সেগমেন্ট ট্রি-১](http://www.shafaetsplanet.com/planetcoding/?p=1557) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-  - [সেগমেন্ট ট্রি-২(লেজি প্রপাগেশন)](http://www.shafaetsplanet.com/planetcoding/?p=1591) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-
-  - [সেগমেন্ট ট্রি](https://iishanto.com/2020/04/01/%e0%a6%b8%e0%a7%87%e2%80%8c%e0%a6%97%e0%a7%87%e2%80%8c%e0%a6%ae%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%9f-%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%bf-%e0%a6%a1%e0%a6%be%e0%a6%9f%e0%a6%be-%e0%a6%b8%e0%a7%8d/) - [শরিফ হাসান](https://facebook.com/io.shanto)
-
-  - [সেগমেন্ট ট্রি লেজি প্রপাগেশন](https://iishanto.com/2020/04/09/%e0%a6%b2%e0%a7%87%e0%a6%9c%e0%a6%bf-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%aa%e0%a6%be%e0%a6%97%e0%a7%87%e0%a6%b6%e0%a6%a8/) - [শরিফ হাসান](https://facebook.com/io.shanto)
-
-  - [Segment tree/ BIT part - 1](http://shakilcompetitiveprogramming.blogspot.nl/2015/06/segment-tree-bit-part-1_21.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
-  - [লোয়েস্ট কমন অ্যানসেস্টর](http://www.shafaetsplanet.com/planetcoding/?p=1831) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-  - পারসিস্টেন্ট সেগমেন্ট ট্রি [১](https://rezwanarefin01.github.io/posts/persistent-segment-tree-01/), [২](https://rezwanarefin01.github.io/posts/persistent-segment-tree-02/) - [রেজওয়ান আরেফিন](https://www.facebook.com/RezwanArefin01)
-
-- বাইনারি ইনডেক্সড ট্রি (Binary Indexed Tree)
-
-  - [বাইনারি ইনডেক্সড ট্রি](http://www.shafaetsplanet.com/planetcoding/?p=1961) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-
-- হ্যাশটেবিল (HashTable)
-
-  - [হ্যাশটেবিল (Hashtable)](https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE/%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6-hash-%E0%A6%8F%E0%A6%AC%E0%A6%82-%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%82-hashing-12b7cb6056b8) - [আলাভোলা](https://medium.com/@amialavola)
-
-- ডিসজয়েন্ট সেট (Disjoint Set)
-
-  - [ডিসজয়েন্ট সেট(ইউনিয়ন ফাইন্ড)](http://www.shafaetsplanet.com/planetcoding/?p=763) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
-  - [Union Find Algorithm](http://shakilcompetitiveprogramming.blogspot.nl/2014/01/union-find-algorithm-union-find.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
-
-- সাফিক্স এ্যারে(Suffix Array)
-
-  - [সাফিক্স এ্যারে(Suffix Array)](https://tanvir002700.wordpress.com/2015/01/13/suffix-array/) - [তানভীর হাসান অনিক](https://www.facebook.com/anick.silentkiller)
-
-- স্পার্স টেবিল (Sparse Table)
-
-  - [স্পার্স টেবিল (Sparse Table)](https://tanvir002700.wordpress.com/2015/05/27/sparse-table/) - [তানভীর হাসান অনিক](https://www.facebook.com/anick.silentkiller)
-
-- [পলিসি বেইজড ডাটা স্ট্রাকচার (PBDS)](https://returnzerooo.wordpress.com/2017/12/24/%E0%A6%AA%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A6%BF-%E0%A6%AC%E0%A7%87%E0%A6%87%E0%A6%9C%E0%A6%A1-%E0%A6%A1%E0%A6%BE%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95/) - [সুদীপ সরকার](https://www.facebook.com/sudip.sarker.9)
-
 ### ম্যাথ ও নাম্বার থিওরী
 
 - প্রাইম নাম্বার (Prime Number)
@@ -325,6 +267,64 @@
 - [Bipartite Checking](https://www.shawonruet.com/2019/11/bipartite-checking-algorithm-step-by.html) - [আসাদুল্লাহ শাওন](https://web.facebook.com/ashadullah.shawon)
 - [ট্রাভেলিং সেলসম্যান](https://www.shawonruet.com/2019/12/traveling-salesman-problem-step-by-step.html) - [আসাদুল্লাহ শাওন](https://web.facebook.com/ashadullah.shawon)
 - [2-SAT](http://shakilcompetitiveprogramming.blogspot.nl/2014/08/blog-post.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
+
+- ট্রি (Tree)
+
+  - [ট্রি ডেটা স্ট্রাকচার](http://hellohasan.com/category/data-structure/tree/tree-basic-concept/) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
+  - [ট্রি - ১ (Tree - 1) - ট্রি-এর প্রাথমিক ধারণা (ভিডিও)](https://youtu.be/0I1JVXbHpec) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [ট্রি - ২ (Tree - 2) - কোনটি ট্রি কোনটি নয়? (ভিডিও)](https://youtu.be/Rz93CQd7jXc) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি ট্রি প্রিঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/p0ltqTz93Nk) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি ট্রি পোস্টঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/zd5ayCGPQXA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি ট্রি ইনঅর্ডার ট্রাভার্সাল (ভিডিও)](https://youtu.be/D9cvhd-jPGs) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+
+- বাইনারী সার্চ ট্রি (Binary Search Tree)
+
+  - [বাইনারি সার্চ ট্রি](http://hellohasan.com/category/data-structure/tree/binary-search-tree-bst) - [হাসান আবদুল্লাহ](https://www.facebook.com/hasan.cse91)
+  - [বাইনারি সার্চ ট্রি - ১ (ভিডিও)](https://youtu.be/FpekDm8ztVA) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি সার্চ ট্রি - ২ (ভিডিও)](https://youtu.be/PrHoIGnU3c0) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি সার্চ ট্রি - ৩ (ভিডিও)](https://youtu.be/IAHqCl5b4fE) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+  - [বাইনারি সার্চ ট্রি - ৪(ভিডিও)](https://youtu.be/F2uwPe3GaVU) - [তামিম শাহরিয়ার সুবীন](https://www.facebook.com/profile.php?id=573698472)
+
+- ট্রাই ট্রি (Trie)
+
+  - [ট্রাই(প্রিফিক্স ট্রি/রেডিক্স ট্রি)](http://www.shafaetsplanet.com/planetcoding/?p=1679) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+  - [ট্রাই ট্রি ( Trie Tree )](http://blog.faiyaz.info/%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%be%e0%a6%87-%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%bf-trie-tree/) - [আহমাদ ফাইয়াজ](https://www.facebook.com/faiyaz26s)
+
+- সেগমেন্ট ট্রি (Segment Tree)
+
+  - [সেগমেন্ট ট্রি-১](http://www.shafaetsplanet.com/planetcoding/?p=1557) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+  - [সেগমেন্ট ট্রি-২(লেজি প্রপাগেশন)](http://www.shafaetsplanet.com/planetcoding/?p=1591) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+
+  - [সেগমেন্ট ট্রি](https://iishanto.com/2020/04/01/%e0%a6%b8%e0%a7%87%e2%80%8c%e0%a6%97%e0%a7%87%e2%80%8c%e0%a6%ae%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%9f-%e0%a6%9f%e0%a7%8d%e0%a6%b0%e0%a6%bf-%e0%a6%a1%e0%a6%be%e0%a6%9f%e0%a6%be-%e0%a6%b8%e0%a7%8d/) - [শরিফ হাসান](https://facebook.com/io.shanto)
+
+  - [সেগমেন্ট ট্রি লেজি প্রপাগেশন](https://iishanto.com/2020/04/09/%e0%a6%b2%e0%a7%87%e0%a6%9c%e0%a6%bf-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%aa%e0%a6%be%e0%a6%97%e0%a7%87%e0%a6%b6%e0%a6%a8/) - [শরিফ হাসান](https://facebook.com/io.shanto)
+
+  - [Segment tree/ BIT part - 1](http://shakilcompetitiveprogramming.blogspot.nl/2015/06/segment-tree-bit-part-1_21.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
+  - [লোয়েস্ট কমন অ্যানসেস্টর](http://www.shafaetsplanet.com/planetcoding/?p=1831) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+  - পারসিস্টেন্ট সেগমেন্ট ট্রি [১](https://rezwanarefin01.github.io/posts/persistent-segment-tree-01/), [২](https://rezwanarefin01.github.io/posts/persistent-segment-tree-02/) - [রেজওয়ান আরেফিন](https://www.facebook.com/RezwanArefin01)
+
+- বাইনারি ইনডেক্সড ট্রি (Binary Indexed Tree)
+
+  - [বাইনারি ইনডেক্সড ট্রি](http://www.shafaetsplanet.com/planetcoding/?p=1961) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+
+- হ্যাশটেবিল (HashTable)
+
+  - [হ্যাশটেবিল (Hashtable)](https://medium.com/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%BF%E0%A6%82-%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE/%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6-hash-%E0%A6%8F%E0%A6%AC%E0%A6%82-%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%82-hashing-12b7cb6056b8) - [আলাভোলা](https://medium.com/@amialavola)
+
+- ডিসজয়েন্ট সেট (Disjoint Set)
+
+  - [ডিসজয়েন্ট সেট(ইউনিয়ন ফাইন্ড)](http://www.shafaetsplanet.com/planetcoding/?p=763) - [শাফায়েত আশরাফ](https://bd.linkedin.com/in/shafaetcsedu)
+  - [Union Find Algorithm](http://shakilcompetitiveprogramming.blogspot.nl/2014/01/union-find-algorithm-union-find.html) - [শাকিল আহমেদ](https://www.facebook.com/shakil.ahmed.980)
+
+- সাফিক্স এ্যারে(Suffix Array)
+
+  - [সাফিক্স এ্যারে(Suffix Array)](https://tanvir002700.wordpress.com/2015/01/13/suffix-array/) - [তানভীর হাসান অনিক](https://www.facebook.com/anick.silentkiller)
+
+- স্পার্স টেবিল (Sparse Table)
+
+  - [স্পার্স টেবিল (Sparse Table)](https://tanvir002700.wordpress.com/2015/05/27/sparse-table/) - [তানভীর হাসান অনিক](https://www.facebook.com/anick.silentkiller)
+
+- [পলিসি বেইজড ডাটা স্ট্রাকচার (PBDS)](https://returnzerooo.wordpress.com/2017/12/24/%E0%A6%AA%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A6%BF-%E0%A6%AC%E0%A7%87%E0%A6%87%E0%A6%9C%E0%A6%A1-%E0%A6%A1%E0%A6%BE%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%95/) - [সুদীপ সরকার](https://www.facebook.com/sudip.sarker.9)
 
 ### ডাইনামিক প্রোগ্রামিং
 
