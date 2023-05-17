@@ -1,0 +1,59 @@
+          বিএফএস শুধুমাত্র আন-ওয়েটেড গ্রাফে কাজ করে, ওয়েটেড গ্রাফে শর্টেস্ট পাথ বের করতে ডায়াক্সট্রা অ্যালগোরিদম ব্যবহার করতে পারো। 
+          গ্রাফে নেগেটিভ সাইকেল থাকলে বেলম্যান ফোর্ড ব্যবহার করতে হবে।
+          
+Time Complexity : O ( n + e ) , n = node , e = edge
+
+          #include<bits/stdc++.h>
+          #define ll long long
+          #define pb push_back
+          using namespace std;
+          bool visited[1000];
+          int level[1000] , parent[1000];
+
+          int main(){
+		int node,edge ,x,y,d;
+		cin>>node>>edge;
+		vector<int>graph[node+2];
+		for(int i = 0 ; i< edge ; i+=1){
+			cin>>x>>y;
+			graph[x].pb(y);
+			graph[y].pb(x);
+		}
+
+		queue<int>q;
+		q.push(0);
+		level[0] = 0 ;
+		parent[0] = -1 ;
+
+		while(! q.empty()){
+			d = q.front();
+			q.pop();
+			visited[d] = 1 ;
+			for(auto a : graph[d]){
+				if( !visited[a] ){
+					
+					parent[a] = d;
+					q.push(a);
+					level[a] = level[d]+1;
+					visited[a] = 1;
+				}
+			}		
+			
+		}
+
+		for(int i = 0 ; i<node ; i+=1)
+			cout<<i<<" parent : "<<parent[i]<<" level :" << level[i]<<endl;
+
+		return 0;
+}
+          /*
+          8 8
+          0 1
+          0 2
+          0 3
+          1 4
+          1 5
+          2 6
+          2 7
+          3 7
+          */

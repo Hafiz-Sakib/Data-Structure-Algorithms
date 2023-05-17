@@ -1,0 +1,43 @@
+// Link : https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+// https://www.youtube.com/watch?v=m-Dqu7csdJk
+// complexity : O(N) ; using Segmenttree , Complexity : O( nlogn )
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int main(){
+    int n , k ;
+    cin >> n >> k ;
+
+    int ar[n] ;
+    deque<int>dq ;
+    vector<int>ans;
+
+    for( int i = 0 ; i < n ; i++ )
+        cin >> ar[i] ;
+        
+        dq.pb(0);
+
+    for(int i = 1 ; i < n ;i++ ){
+
+        for(auto a : dq )
+            if( a < (i-k+1)  ) dq.pop_front();
+
+        while( !dq.empty() && ar[i] <= ar[dq.back()] ) // use  ">=" for Maximum in a range, this code works for Minimum in a range 
+            dq.pop_back();
+
+        dq.pb(i);
+
+        if(i >= k-1 ) 
+            ans.pb(ar[dq.front()]);
+    }
+
+    
+    for(auto a : ans )
+        cout << a << " "; cout << endl;
+
+return 0;
+}
+

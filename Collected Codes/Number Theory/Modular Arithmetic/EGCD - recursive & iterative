@@ -1,0 +1,63 @@
+Base case  : 
+ // a * x + b * y = gcd ( a,b ) = g-------------(i)
+    g * 1 + 0 * 0 = g -----------(ii)
+ Compare i and ii , base case will found .
+//-----------------------------------------------------
+  
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+-----------------------------------------------------------------------
+Recursive . -A bit slower than itrative . 
+=======================================================================
+ll egcd ( ll a , ll b , ll &x , ll &y){
+        if(b==0){  
+              x = 1 ;
+              y = 0;
+            return a ;
+        }
+        ll x1,y1;
+        ll d =  egcd ( b , a%b , x1 , y1);
+        x = y1 ;
+        y = x1 - (a/b)*(y1) ;
+        return d;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Iterative  - Here ,it used direct Euclideian Algorithm extend .It also can be implemented using Tuple .
+logic of this code is listed in DOCS .Check Desktop or GD link : https://drive.google.com/file/d/1Pu22n9MCqdpw3LaMt9vAeDZdP7mMyihk/view?usp=sharing
+======================================================================================================================================================
+int gcd(int a, int b, int& x, int& y) {
+    x = 1, y = 0;
+    int x1 = 0, y1 = 1, a1 = a, b1 = b , temp_x,temp_y ,temp_a1;
+    while (b1) {
+      int q = a1 / b1;
+      temp_x = x   ,   x = x1   ,    x1 = temp_x  - q*x1 ;
+      temp_y = y   ,   y = y1   ,    y1 = temp_y  - q*y1;
+      temp_a1 = a1 ,   a1= b1   ,    b1 = temp_a1 - q*b1;
+    }
+    return a1;
+}
+==========================================================================
+int gcd(int a, int b, int& x, int& y) {
+    x = 1, y = 0;
+    int x1 = 0, y1 = 1, a1 = a, b1 = b;
+    while (b1) {
+        int q = a1 / b1;
+        tie(x, x1) = make_tuple(x1, x - q * x1);
+        tie(y, y1) = make_tuple(y1, y - q * y1);
+        tie(a1, b1) = make_tuple(b1, a1 - q * b1);
+    }
+    return a1;
+}
+tie() used to unpack tuple .
+========================================================================
+int main(){
+    ll x,y;
+    ll d =  egcd( 24,36,x,y );
+    cout<<d<<endl;
+    cout<<x<<"  "<<y<<endl;
+return 0;
+}
+

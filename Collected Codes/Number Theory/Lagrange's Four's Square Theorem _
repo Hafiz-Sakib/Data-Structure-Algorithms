@@ -1,0 +1,38 @@
+Lagrange's theorem states that every natural number can be 
+written as sum of squares of four no negative integers.
+For eg . 1 = 0^2 + 0^2 + 0^2 + 1^2 
+         23 =  1^2 + 2^2 + 3^2 + 3^2 
+
+// code 
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int main(){
+    int  n , d ,cnt = 0;
+    bool fg = 0 ;
+    cin>>n;
+    d = sqrt(n)+1;
+    for(int i = 0 ; i<=d ; i+=1){
+        for(int  j = i ; j<=d ; j+=1){
+            for(int k = j ; k<=d ; k+=1){
+                for(int  p = k ; p<=d ; p+=1){
+                        if(i*i + j*j + k*k + p*p == n){
+                            cout<<i<<" "<<j<<" "<<k<<" "<<p<<" "<<endl;
+                            fg= 1 ;
+                        }
+                        cnt+=1;
+                    if(fg) break;
+                }
+                if(fg) break;
+            }
+            if(fg) break;
+        }
+        if(fg) break;
+    }
+    cout<<cnt<<endl;
+
+return 0;
+}
+

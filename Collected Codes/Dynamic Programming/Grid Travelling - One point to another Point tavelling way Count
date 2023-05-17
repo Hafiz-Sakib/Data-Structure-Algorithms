@@ -1,0 +1,54 @@
+Through this Problem , we able to count all possible way from one point to another point 
+in a 2D grid avoiding obstacles . 
+There is another way using Combinatorics which is Hard for me  but interesting .Checkout following Blog link to 
+Explore this Way.
+
+Source : http://shoshikkha.com/archives/4240
+Source : http://shoshikkha.com/archives/4182
+-----------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+ll cnt = 0 ;
+
+int dp[1000][1000] , grid[1000][1000];
+
+ll solve ( int n , int m ) {
+    cnt += 1 ;
+
+    if ( n == 0 || m == 0 ) return 1 ;
+
+    if ( grid[n][m] ) return 0 ;
+
+    if ( dp[n][m] != -1 ) return dp[n][m] ;
+
+    dp[n][m] =  solve(n,m-1) + solve ( n-1 , m ) ;
+
+    return dp[n][m] ;
+
+}
+
+int main(){
+
+    int n , m , x , p , q ;
+    cin >> n >> m ;
+
+    memset( grid , 0 , sizeof (grid));
+
+    cout << "Co - ordinate with obstacles  :  \n";
+    cin >> x ;
+    for ( int i = 1 ; i <= x ; i++ ){
+        cin >> p >> q ;
+        grid [p][q] = 1 ;
+    }
+
+    memset ( dp , -1 , sizeof (dp)) ;
+    ll ans = solve (n , m ) ;
+    cout << ans << endl ;
+
+    cout << cnt << endl ;
+
+return 0;
+}
+

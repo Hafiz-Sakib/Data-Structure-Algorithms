@@ -1,0 +1,25 @@
+Kynea number
+Given a positive integer n, the task is to find nth Kynea number.
+
+Kynea number: In mathematics, a Kynea number is a positive integer of the form:
+Kynea number : 4^n + 2^(n+1) -1 
+where n is a positive integer.
+
+The equivalent formula for nth Kynea number is:
+kynea number : ( 2^n + 1 )^2 - 2
+
+The first few Kynea number are:
+
+7, 23, 79, 287, 1087, 4223, 16639, 66047, 263167, 1050623, 4198399, …..
+
+
+Examples:
+
+Input: 2
+Output: 23
+    Putting n = 2 in formula,
+    = 42 + 2 2+1 - 1
+    = 16 + 8 -1
+    = 23  
+    
+    

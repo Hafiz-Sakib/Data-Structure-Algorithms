@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+
+	#ifndef ONLINE_JUDGE
+	freopen("input.txt","r",stdin);
+	freopen("out.txt","w",stdout);
+	#endif
+	int node ,edge , x , y , cost ;
+	cin>>node>>edge;
+
+	//vector< pair<int,int> > graph[node+1];
+	vector< int > graph[node+1];
+
+	for(int i  = 1 ; i<= edge ; i+=1){
+		cin>>x>>y;//>>cost;
+		//graph[x].push_back({y,cost});
+		// for undricted graph 
+		graph[x].push_back(y);
+
+	}
+	for( int i = 1 ; i<=node ; i+=1){
+		cout<<i<<" - ";
+		for(int j = 0 ; j<graph[i].size() ; j+=1){
+			cout<<graph[i][j]<<" ";
+			//cout<<graph[i][j].first<<" "<<graph[i][j].second<<endl;
+		}
+		cout<<endl;
+	}
+}

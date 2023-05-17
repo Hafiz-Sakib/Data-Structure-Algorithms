@@ -1,0 +1,28 @@
+// Efficiently check if there is an edge between two nodes .
+// Drawback : Space Complexity : O ( n^2 ), where maximum is waste of space because every 
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+        int node ,edge , x , y , cost ;
+        cin>>node>>edge;
+
+        int adj_matrix [ node+1 ][ node+1 ];
+
+        memset( adj_matrix , 0 , sizeof( adj_matrix ));
+
+        for(int i = 1 ; i<=edge ; i+=1){
+            cin>>x>>y>>cost;
+            adj_matrix[x][y] = cost ;
+            adj_matrix[y][x] = cost ; // for directed graph , comment this line just .
+        }
+
+        for(int i  = 1 ; i<=node ; i+=1){
+            for(int j = 1 ; j<=node ; j+=1){
+              cout<<adj_matrix[i][j]<<" ";
+            }
+            cout<<endl;
+        }
+        return 0;
+}

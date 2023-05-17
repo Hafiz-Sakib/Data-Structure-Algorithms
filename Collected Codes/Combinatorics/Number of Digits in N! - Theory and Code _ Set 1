@@ -1,0 +1,24 @@
+Reference : https://forthright48.com/number-of-digits-of-factorial/
+//-----------------------------------------------------------------
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    vector<ll>v,p;
+    
+    double eps = 1e-9  , d = 0 ;
+    for(int i = 1 ; i<=n ; i++){
+            d+=log10(i);
+            v.pb((int)(d)+1);
+    }
+   cout<<(int)(d+1)<<endl;
+    for(auto a : v) cout<<a<<" ";cout<<endl;
+    
+return 0;
+}
+
+

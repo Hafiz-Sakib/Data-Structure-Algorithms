@@ -1,0 +1,45 @@
+/* 
+IN SET 1 : we use log (1 to n ) to get the total digit .formula :
+ digit( n! ) = log1 + log2 + log3 + ......+ logn.
+
+To get total digit of a number which is bigger then 10^7 is quite impossible in this 
+way.Cause it will excced time limit. So we have to use different formula in this section .
+
+Here , we will use Kamenetsky's Formula . Which allow us to get the total digit here .
+
+Image link : https://jamboard.google.com/d/1SJkGD0r65J0UI_8axa2sRMPweK7ANzbWi0grGmWhjfY/edit?usp=sharing
+
+
+ 
+ */
+#include <bits/stdc++.h>
+#define ll long long
+#define M_PI 3.14159265358979323846264338327950
+#define M_E 2.718281828459045235360287471352
+using namespace std;
+
+ll findDigits(int n){
+    
+    if (n < 0) return 0;
+    if (n <= 1) return 1;
+    double x = ((n * log10(n / M_E) +log10(2 * M_PI * n) / 2.0) );
+    return floor(x) + 1;
+    
+}
+
+int main(){
+    int t;
+    cin>>t;
+    
+    for(int i=1; i<=t; i++)
+    {
+        int a;
+        cin>>a;
+        printf("Case %d: %lld\n",i,findDigits(a));
+    }
+    
+    return 0;
+}
+
+ 
+ 

@@ -1,0 +1,28 @@
+
+
+Fermats little Theorem : 
+     if a & p are co-prime &  p is prime , then : a^p % p = a
+     অনুসিদ্ধান্ত  : a ^ (p-1) % p = 1 
+     This also yiels : a ^ k % m = a ^ ( k% (m-1) ) % m
+According to Euler Totient Function , if p is prime , then , phi(p) = p-1  
+So we can re-write Fermat's theorem as follow : 
+     a ^ phi(p) % p = 1 =  a ^ (p-1) % p .
+     
+
+Moduler Inverse  : 
+    a/b % m = ?
+    we can re-write :( a.b^-1 )%m = ((a%m)(b^-1 % m )%m)
+    (b^-1 % m ) this is moduler inverse .It is only possible of b & m are co-prime .
+    If a moduler inverse exsits , it can be calculated using the formula 
+              b ^ (-1) = b ^ ( phi(m)-1 ) = b ^( m-2 )
+              
+              For example : 
+                  6 ^ -1 % 17 = 6 ^ (17-2)  % 17 =  6 ^ 15 % 17 , use bigmod to solve it .
+Negative Mod : 
+          For avoiding negative mod , we have to do : 
+         (( n % m ) + m ) % m , if n is negative 
+                  
+                  
+                  
+              
+          

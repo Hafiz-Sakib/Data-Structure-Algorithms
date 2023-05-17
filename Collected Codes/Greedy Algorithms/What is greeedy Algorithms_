@@ -1,0 +1,14 @@
+What is Greedy Algorithms ?
+
+Answer :
+Greed y Algorithms is a way of problem solving in where we solve a problem stage bt stage .
+There are two types of solutions .One is Feasible Solution and another is Optimal Solution.All solutions 
+of a problem is Feasible solutions but a particular Solution is Known as Optimal Solution which satisfy 
+all constraints of Problem .
+
+In greedy algorithms , we first fix all fesible solutions for a particular problem .Then , we divide the problem 
+in different stage .In every stage , some fesible solutions excluded from solutions list. It can be compareable with 
+Army/Navy/Airforce_Officer_Cadet_admission_test .In this Recruitment process ,they arranged a test way stage by stage .
+Firstly ,They take Physical Test .Some candidate are got excluded and go on .After the final stage they got some new 
+Officer Cadet.
+

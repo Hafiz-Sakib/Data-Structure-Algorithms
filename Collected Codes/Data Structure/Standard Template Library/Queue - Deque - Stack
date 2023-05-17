@@ -1,0 +1,96 @@
+STACK:  (FIFO)
+==============
+			empty() – Returns whether the stack is empty.  s.empty ()
+			size() – Returns the size of the stack .   			s.size();
+			top() – Returns a reference to the top most element of the stack . s.top();
+			push(g) – Adds the element ‘g’ at the top of the stack .   s.push();
+			pop() – Deletes the top most element of the stack . s.pop();
+			All Time Complexity : O(1)
+
+QUEUE: (LIFO)
+============= 
+		empty() – Returns whether the queue is empty.  V.empty();
+		size() – Returns the size of the queue.   V.size();
+		swap() - Exchange the contents of two queues but the queues must be of same type, although sizes may differ.
+			     queue1.swap(queue2)
+			    swap(queue1, queue2)
+
+		emplace() in C++ STL: Insert a new element in the end of the queue.
+		 queuename.emplace(value)
+
+		front() and back() – 
+				front() function returns a reference/iterator to the first element of the queue.    V.front();
+				 back() function returns a reference/iterator to the last element of the queue.    V.back();
+		push(g) and pop() –
+				 push() function adds the element ‘g’ at the end of the queue.
+				 pop() function deletes the first element of the queue.
+
+DEQUE:
+======
+		Double ended queues are sequence containers with the feature of expansion and contraction on both the ends.
+
+			Insertation Function :
+			Insert()  :
+				d.insert(iterator pos, val);
+				d.insert(iterator pos,size n, val);
+				d.insert (iterator position, InputIterator first, InputIterator last);// through this insert operation 
+						we can insert a another vector/array or anything like those in this particular deque.
+			Push_front() & Push_back()  :
+						dequename.push_front(value)
+						dequename.push_back(value)
+			emplace_front() & emplace_back() :
+						dequename.emplace_front(value)
+						dequename.emplace_back(value)
+			Pop_front()  & Pop_back() :
+						dequename.pop_front()
+						dequename.pop_back()
+
+			Traversing way :
+			1.	front() & back() :
+					Dq.front()  
+					Dq.back();
+
+			2.	begin() & end() :
+						begin()--return an iterator pointing to the first element of the deque container.
+						end() --return an iterator pointing to the last element of the deque container.
+						    Dq.begin()  ; 
+						    Dq.end()  ;
+
+
+			3.	rbegin() & rend() :
+						rbegin()  --which returns a reverse iterator which points to the last element of 
+								the deque (i.e., its reverse beginning).
+						rend()  -- vice-versa of rbegin() :
+						   Dq.rbegin() 
+						   Dq.rend();
+			4.	cbegin() , cend() , crbegin() ,crend() . ----constant..can’t be changed
+			
+	Accessing element :
+			1 . at()
+					dq . at( pos );
+			2. operator[]
+					dq [ pos ];
+
+			Difference  : at() function throws an out-of-range exception when the position is not in the 
+					bounds of the size of deque, while  operator[] causes undefined behaviour.
+	
+	Other’s Function :
+			swap() :  swap two deque with each other.   deque1 . swap ( deque2 )
+					swap( deque1 , deque2 )
+			operator ‘ =’ : this operator assign one deque’s value to others .
+					Deque1 = { 1 , 2 , 3 };
+					Deque2 = { 4 , 5 , 6 };
+					Deque1 = Deque2;
+					Deque1 = { 4 , 5 , 6 }; //new assignment
+
+			empty() :    deque . empty() ;
+			clear() :    deque.clear() ;
+			erase() :   it erase a particular element
+					range of a deque.
+						erase ( iterator position );
+						erase( starting iter ,ending iter);
+			size() :      deque . size() ;
+			resize(): it handle the size of deque. 
+			resize ( n ) ;
+			n = new size of deque.
+			max_size() :  dq.max_size() ; return maximum size of Deque.

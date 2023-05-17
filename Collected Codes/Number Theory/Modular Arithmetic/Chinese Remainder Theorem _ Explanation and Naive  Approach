@@ -1,0 +1,49 @@
+/*
+Theory Link : https://www.geeksforgeeks.org/chinese-remainder-theorem-set-1-introduction/
+
+আমাদের দুইটি সংখ্যার এরে/ভেক্টর দেয়া থাকবে , Number[০,n) এবং Remainder[০,n) ;  প্রথম এরে এর সবগুলো 
+নম্বর অবশ্যই কো-প্রাইম । আমাদেরকে এমন একটি সংখ্যা ,x খুঁজে বের করতে হবে যেন , 
+     x % number[0]    =  remainder[0], 
+     x % number[1]    =  remainder[1], 
+     ..................................
+     x % number[k-1]  =  remainder[k-1] 
+উদাহরণ : 
+  Number [] = { 5 , 7 }
+  Remainder[] = { 1 , 3 }
+  x  = ? 
+  X = হবে ৩১ , কিভাবে ?
+  Let's Check :  31%5 = 1 , 31%7 = 3
+ //----------------------------------------------------------------------------------------------------------
+ A naive approch used here to Determine such "x" here, in where, we started a loop from 1 , which actually 
+ represent x . if for all x%num[i] != rem[i] not satisfied ,then we increase x's value .
+ At last we get a value of x . Check out Code section .
+
+*/
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+int chinese_remainder( int mod[] , int rem[] , int n){
+    int res = 1 ,i;
+    while(1){
+    for(i = 0 ; i<n ; i+=1){
+        if( res % mod[i] != rem[i] ) break;
+        }
+        if(i==n) return res;
+        res+=1;
+    }
+}
+
+int main(){
+    int n ;
+    cin>>n;
+    int mod[n] , rem[n] ;
+    for(int i = 0 ; i<n ; i+=1) cin>>mod[i];
+    for(int i = 0 ; i<n ; i+=1) cin>>rem[i];
+    int d = chinese_remainder ( mod ,rem ,n);
+    cout<<d<<endl;
+
+
+return 0;
+}
+

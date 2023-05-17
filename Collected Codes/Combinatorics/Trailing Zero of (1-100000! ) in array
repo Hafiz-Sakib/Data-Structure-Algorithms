@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+vector<int>v[3000000];
+int main(){
+    ll sum = 0,t ;
+    float j,d;
+    for(int i = 1 ; i<=500000 ; i+=1){
+        d = 5;
+        j = 1;
+        while(d<=i){
+            sum += (i/d);
+            j+=1;
+            d  = pow(5,j);
+        }
+        v[i].pb(sum);
+        sum = 0;
+   }
+   for(int i = 1 ; i<=100; i+=1)
+    cout<<i<<" ---- "<<v[i][0]<<endl;
+return 0;
+}
+
+

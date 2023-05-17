@@ -1,0 +1,40 @@
+Pythagorean Triples : A triple which satisfies Pythagorean Theorem : a^2 + b^2 = c^2
+
+Euclid's formula can be used to produce all primitive Pythagorean triples (a,b,c)
+according to this formula : (a , b, c) = ( n*n - m*m , 2*n*m , n*n + m*m )
+                              in where , n>m & n and m are co-prime .
+//------------------------------------------------------------------------------------------
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+
+int main(){
+
+   int n,m,a,b,c;
+
+   cin>>n>>m;
+
+   if( __gcd(n,m)==1 && (n%2==0 || m%2==0) ){
+
+        if(m>n) swap(n,m);
+        a = n*n - m*m ; 
+        b = 2*n*m;
+        c = n*n + m*m ;
+        cout<<a<<" "<<b<<" "<<c<<endl;
+   }
+   else {
+    cout<<"Impossible"<<endl;
+   }
+
+return 0;
+}
+//------------------------------------------------------------------------------
+
+Wilson's Theorem : states that a number n is prime exactly when 
+                    (n-1)! mod n = n-1 
+                    Ex : if n = 11 , then  10! mod 11 = 10
+                   This actually used for primility test . It cause a large big integer in case of larger value of 
+                   
+                    

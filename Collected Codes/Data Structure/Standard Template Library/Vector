@@ -1,0 +1,185 @@
+VECTOR:
+
+Traversing way: (  with the help of iterator  )
+        1) V.begin() to V.end()
+        2) V.rbegin() to V.rend()  --reverse 
+        3) V.cbegin() to V.cend()   == 			constant traverse.
+        4) V.crbegin() to V.crend() == constant reverse  traverse
+
+All the case here we use auto keyword to initalize the iterator . auto keyword helps to 
+initialize any type of variable.So ,unknown type variable can be initialized by AUTO keywod. 
+
+To know the type of unknown keyword we use:
+      typeid(unknown variale).name());
+  --It returns first character of datatype .
+
+Example: 
+      vector<int>g1 + {1,2,3,4,5 };
+      for (auto i = g1.begin(); i != g1.end(); ++i ) 
+            cout << *i << " "; 
+          
+Capacity:
+      1) size() –V.size();
+      2) max_size()–{ Returns the maximum number of elements.
+                            ==V.max_size(); }
+      3) capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.      
+                            ==V.capacity()
+      4) resize(n) – Resizes the container so that it contains ‘n’ elements.
+                            ==V.resize(n) - for extra space it initialize itsself as Zero.
+      5) empty() – Returns whether the container is empty.
+      6) shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
+                            == V.shrink_to_fit();
+      7) reserve() – Requests that the vector capacity be at least enough to contain n elements.
+                            ==V.reserve() ;---For taking extra space .Increase Capacity.
+
+Element access:
+        	reference operator [g] – Returns a reference to the element at position ‘g’ in the vector.
+             DEC:   V [elem_position];
+        	at(g) – Returns a reference to the element at position ‘g’ in the vector.
+             DEC:  V. at (elem_position);
+        	front() –V.front();
+        	back() – V.back();
+        	data() – auto it = V.data()--it contain the address of first element.Or we also can use a pointer.
+
+Modifiers:
+      1.	assign() – It assigns new value to the vector elements by replacing old ones.
+                          V.assign  (  how many , value  );
+                          V.assign  ( array,  array + size_of_array);
+                          V.assign  ( V.begin(),V.begin()+5);
+                  Assain() works like one kind of reinitialization.   
+
+      2.	push_back() --V.push_back(Value);
+      3.	pop_back() –V.pop_back();
+      4.	insert() –
+                          Vec . insert( position,value);
+                                Vec . insert(  vec.begin()+2 ,  8  );
+                                Vec . insert(vec.begin()+2 ,{8,56,78,34} );
+                          Vec . insert( position, how many, value);
+                                Vec . insert(  vec.begin()+2 ,  8 ,45  );
+      Last statement will add total 8 times 45 on the 2nd position of this given vector.
+
+      5.	erase()–used to remove elements from a container from the specified position | range.
+                      
+                      vec.erase(position)
+                      vec.erase(start_pos,end_pos)
+                      
+      6.	swap() –swap the contents of one vector with another vector of same type. Sizes may differ.
+            vectorname1.swap(vectorname2)
+            
+      7.	clear() –  Vec.clear();  (all elem erased)
+      
+      8.	emplace() – extends the container by inserting new element at position
+                         vec.emplace(position,element); 
+                         
+      9.	emplace_back() – insert a new element  end of the vector.
+                         vec.emplace_back(value)
+                         
+Complementary:
+
+      -->ভেক্টরে সরাসরি কপি করতে পারি। 
+          vector< int > v, t;
+          v = t;
+
+       -->Vector Passing to a Function:
+        1)	
+          int func(vector<int> vec _name); // call by value
+          int main(){
+                Vector<int> vec_name;
+                Func(vec_name);
+          }
+       In this type of calling a vector is like a local call which we known
+       as “call by value”.If we change the element on this function ,it will
+       not effect main function’s vector.
+
+      2)	int func (vector <int> &vec_name ) // call by reference
+
+      In this type of calling is works as call by reference.We send here the 
+      address of vector .If we modify this vector in this called function,this 
+      vector will change totally.It will work as a global variable.
+
+      3)
+      void func (const vector<int>  &vec_name)
+      
+      Here we also receiving a vector address.But we use const keyword before.So 
+      here we cannot change or modify the vector.
+
+Vector of Vectors in STL(2D ) : 
+==============================
+Vector of Vectors is a two-dimensional vector with a variable number of rows where each row is vector.
+Each index of vector stores "a vector" which can be traversed and accessed using iterators. 
+It is similar to an Array of Vectors but with dynamic properties.
+
+            vector< vector<data_type> > vec;
+
+    Initialize a  2D- vector with Zero .
+    
+        vector<vector<int> > vec( size ,vector<int>(size));   
+    Example :
+    
+	vector< vector<int> > vec ( 100 , vector<int>(100) );  
+	100 row
+	100 coloumn
+	Initialized -Zero.
+
+	To traverse:
+	 for (int i = 0; i < vec.size(); i++) 
+		for (int j = 0; j < vec[i].size(); j++)
+
+Actually 2D vector is nothing but a vector of another vector.
+
+		vector< vector<data_type> > vec;
+
+		Vector [0] = vector< type > v1;
+		Vector [1] = vector< type > v2;
+		Vector [2] = vector< type > v3;
+		Vector [3] = vector< type > v4;
+		Vector [4] = vector< type > v5;
+
+		vector< type > v1,v2,v3 and so on individually has so many element.
+
+Array of Vectors :
+==================
+
+array of vectors is two dimensional array with fixed number of rows where each row is 
+vector of variable length. Each index of array stores a vector which can be traversed 
+and accessed using iterators.
+
+Syntex :
+	vector< data_type > v[ size ];
+	Let’s assume size = 3 ,so row = 3(fixed)
+ 
+		V[o]<---vector <data_type>v1  (vary )
+		V[1]<---vector <data_type>v2  (vary )
+		V[2]<---vector <data_type>v3  (vary )
+
+	Insertion :
+		 for i in [0, n) {
+			 A[i].push_back(35)
+			} -- PYthon_code
+	Traversal :
+		for i in [0, n) {
+		   for(iterator it = A[i].begin(); 
+		       it!=A[i].end(); it++) {
+		      print(*it)  }  
+		      }
+	Specifying a default value for the Vector:
+	vector <int>v (size ,defaultvalue );
+
+Mazimum size declareable :
+			Vector<int>v(108)
+
+upper_bound And lower_bound() :
+===============================
+
+	lower_bound : returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’.
+				If the value is out of vector , it returns vector.end() .
+
+			Iterator it = lower_bound ( Iterator first, Iterator last , const val )
+
+	upper_bound : returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’.
+			If the value is out of vector or equal to greatest element  , in this case , it return vector.end() . 
+
+			Iterator it2 = upper_bound ( Iterator first, Iterator last , const val)
+			
+			
+

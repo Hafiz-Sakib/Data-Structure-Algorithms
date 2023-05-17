@@ -1,0 +1,28 @@
+/*
+সূত্রটি হল :   V p ( n! ) = floor[n/p] + floor[n/p^2] + floor[n/p^3]+... p এর পাওয়ার 
+ততক্ষণ  বাড়াতে থাকবো যতক্ষন না ফ্লোর function এর মান ০ না আশা পর্যন্ত। 
+
+যেমন : V 3 ( 5! ) = floor[5/3] + floor[5/9]
+                  = 1 + 0 =  1;
+                এইখানে পাওয়া গেলো ৩ এর সর্বোচ্চ পাওয়ার ১ অথাৎ ৩ দিয়ে ৫! বা ১২০ কে 
+                একমাত্র নিঃশেষে বিভাজ্য করা যাবে। ৯,২৭,৮১..... কোনটি দিয়ে তা সম্ভব 
+                নয়। 
+ */
+ #include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int main(){
+    int n , p,ans = 0 ,j = 1;
+    cin>>n>>p;
+    while(n/p){
+        ans+=(n/p);
+        p = pow(n,j+=1);
+    }
+    cout<<ans<<endl;
+return 0;
+}
+
+
+ 

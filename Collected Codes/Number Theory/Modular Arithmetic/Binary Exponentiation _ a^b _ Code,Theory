@@ -1,0 +1,41 @@
+// complexity : O ( logn )
+// Algorithm :
+The idea of binary exponentiation is, that we split the work using the binary representation of the exponent.
+
+Let's write n in base 2, for example:
+      3^13=3^1101 =3^8⋅3^4⋅3^1
+Since the number n has exactly ⌊log2n⌋+1 digits in base 2, we only need to perform O(logn) multiplications, if we know the powers a^1,a^2,a^4,a^8,…,a^⌊logn⌋.
+
+So we only need to know a fast way to compute those. Luckily this is very easy, since an element in the sequence is just the square of the previous element.
+
+Check CP-Algoritms
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+ll binary_expo_recursive( ll a , ll b){
+    if(b==0) return 1;
+    ll res = binary_expo_recursive(a,b/2);
+    if(b&1) return res*res*a;
+    else return res*res;
+}
+ll binary_expo_iterative( ll a , ll b ){
+    ll res = 1 ;
+    while(b){
+        if(b&1) res*=a;
+        a*=a;
+        b/=2;
+    }
+    return res;
+}
+
+int main(){
+    ll a,b;
+    cin>>a>>b;
+    ll ans = binary_expo_iterative(a,b);
+    cout<<ans<<endl;
+return 0;
+}

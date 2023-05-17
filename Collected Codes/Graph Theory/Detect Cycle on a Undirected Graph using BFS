@@ -1,0 +1,64 @@
+Detect a cycle on a Undirected graph :
+Source : https://www.youtube.com/watch?v=vXrv3kruvwE
+
+Here we use a bfs , to detect any cycle on an unweighted Undirected graph. We use a visited[] array , which is initialized 
+with Zer0 . In queue , when we add a djacent node of x  , then it will initialized with one .
+After Completing bfs for this particular node , we make the value of visited [] as two .
+
+Checkout the Code below : 
+========================
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int visited[10000];
+
+int main(){
+
+                int node,edge,x,y;
+                cin>>node>>edge;
+                vector<int>graph[node+1];
+
+                for(int i = 1 ; i<=edge ; i+=1){
+                    cin>>x>>y;
+                    graph[x].pb(y);
+                    graph[y].pb(x);
+                }
+                queue<int>q;
+
+                q.push(0);
+                visited[0] = 1 ;
+
+                bool cycle = false  ;
+
+                while(!q.empty()){
+                    x = q.front();
+                    q.pop();
+                    for(int a : graph[x]){
+                        if(visited[a] == 1 ){
+                                cycle = true ;
+                                cout<<a<<" "<<x<<endl;
+                        }
+                        if(visited[a] == 0 ){
+                           q.push(a);
+                           visited[a] = 1 ;
+                        }
+                    }
+                      visited[x] = 2 ;
+                }
+                if(cycle)
+                    cout<<"Cycle Detected"<<endl;
+                else
+                    cout<<"There is no Cycle "<<endl;
+
+return 0;
+}/*
+5 5
+0 1
+0 2
+2 3
+2 4
+3 4
+*/

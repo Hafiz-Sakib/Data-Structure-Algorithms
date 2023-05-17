@@ -1,0 +1,110 @@
+
+/*
+  In details : https://cp-algorithms.com/algebra/linear-diophantine-equation.html
+  
+
+*/
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+ll egcd( ll a , ll b , ll &x , ll &y){
+    if(b==0){
+        x = 1 ;
+        y = 0 ;
+        return a;
+    }
+    ll x1,y1,d;
+    d = egcd(b,a%b,x1,y1);
+    x = y1;
+    y = x1 - (a/b)*y1;
+    return d ;
+}
+
+
+bool find_solution(ll a , ll b , ll c , ll &x , ll &y , ll &g){
+
+    g = egcd( abs(a) , abs(b) , x , y );
+    if(c%g) return 0 ;
+    
+    x *= (c/g);
+    y *= (c/g);
+    
+    if(a<0) x = -x;
+    if(b<0) y = -y;
+    
+    return 1 ;
+}
+
+
+void shifting(ll &x , ll &y , ll a , ll b , ll cnt){
+    x+=(cnt*b);
+    y-=(cnt*a);
+}
+
+
+ll total_solution(ll a , ll b , ll c , ll minx , ll maxx , ll miny , ll maxy){
+   
+    if(a==0 && b==0 ) return (maxx-minx+1)*(maxy-miny+1)*(c==0);
+    if(a==0) return (maxx-minx+1)*(c%b==0)*(c/b>=miny&&c/b<=maxx);
+    if(b==0) return (maxy-miny+1)*(c%a==0)*(c/a>=minx&&c/a<=maxx);
+
+    ll x,y,g,l1,r1,l2,r2;
+    bool fg = find_solution( a , b , c ,x , y , g);
+  
+    if(!fg) return 0;
+      a/=g;
+      b/=g;
+    
+  //  cout<<x<<" "<<y<<" "<<g<<endl;
+  
+    ll sg_a = a>0 ? +1 : -1 ;
+    ll sg_b = b>0 ? +1 : -1 ;
+    
+    shifting(x,y,a,b,(minx-x)/b);
+    if(x<minx) shifting(x,y,a,b,sg_b);
+    if(x>maxx) return 0 ;
+    l1 = x;
+    
+  //  cout<<l1<<" "<<y<<endl;
+
+    shifting(x,y,a,b,(maxx-x)/b);
+    if(x>maxx) shifting(x,y,a,b,-sg_b);
+    r1 = x;
+   // cout<<r1<<" "<<y<<endl;
+
+    shifting(x,y,a,b,(y-miny)/a);
+    if(y<miny) shifting(x,y,a,b,-sg_a) ;
+    if(y>maxy) return 0 ;
+    l2 = x;
+   // cout<<l2<<"---- "<<y<<endl;
+
+    shifting(x,y,a,b,(y-maxy)/a);
+    if(y>maxy) shifting(x,y,a,b,sg_a);
+    r2 = x;
+   //cout<<r2<<" ---- "<<y<<endl;
+
+   //cout<<l1<<" "<<r1<<" "<<l2<<" "<<r2<<endl;
+
+    if(l2>r2) swap(l2,r2);
+
+    ll l = max(l1,l2);
+    ll r = min(r1,r2);
+    if(l>r) return 0;
+    l = (r-l)/abs(b) +1 ;
+    return l;
+}
+
+int main(){
+    ll t;
+    cin>>t;
+    for(ll i = 1 ; i<=t ; i+=1){
+    ll a , b, c , minx , maxx , miny , maxy ,d;
+    cin>>a>>b>>c>>minx>>maxx>>miny>>maxy;
+    d = total_solution(a,b,-c,minx,maxx,miny,maxy);
+    cout<<"Case "<<i<<": "<<d<<endl;
+    }
+
+return 0;
+}

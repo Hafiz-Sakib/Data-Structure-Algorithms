@@ -1,0 +1,38 @@
+/*
+Digits of N! in Different Base:
+----------------------------------
+Now what if we want to find how many digits N! has if we convert N! to some other base.
+
+For example, how many digits 3! has in the binary number system with base 2? We know that 3! = 1*2*3 = (6) decimal=(110) binary. So 3! has 3 digits in base 2 number system.
+
+Can we use logarithms to solve this problem too?  : Yes.
+
+number of digits of x in base B=⌊logB(x)⌋+1
+All we need to do is change the base of our log and it will find the number of digits in that base.
+
+But, how do we change base in our code? We can only use log with base 2 and 10 in C++. Fear not, we can use the following law to change base of logartihm from B to C.
+        log B (x)=log C (x) / log C (B)
+
+So in C++, we will use C=2 or C=10 to find value of logB(x).
+*/
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+int main(){
+    int n,base;
+    cin>>n>>base;
+    vector<ll>v,p;
+
+    double eps = 1e-9  , d = 0 ;
+    for(int i = 1 ; i<=n ; i++){
+            d+=(log10(i)/ log10(base));
+            v.pb((int)(d)+1);
+    }
+   cout<<(int)(d+1)<<endl;
+    //for(auto a : v) cout<<a<<" ";cout<<endl;
+
+return 0;
+}
+

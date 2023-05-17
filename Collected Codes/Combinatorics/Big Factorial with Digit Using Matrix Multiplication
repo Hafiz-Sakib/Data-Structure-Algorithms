@@ -1,0 +1,47 @@
+//Time Complexity : O ( n )
+//Factorials
+        Factorial of a number
+        Last n digits of  a factorial
+        Number of digits of a factorial
+//----------------------------------------
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+
+vector<int>factorial;
+
+void multi ( int  m){
+    
+   int  d = factorial.size() , carry = 0 ,prod ;
+
+   for(int i = 0 ; i<d ; i++){
+        prod = factorial[i]*m+carry;
+        factorial[i]= prod%10;
+        carry = prod/10;
+   }
+   while(carry){
+     factorial.pb(carry%10);
+     carry/=10;
+   }
+}
+
+int main(){
+    int n;
+    cin>>n;
+    factorial.pb(1);
+    
+    for(int i = 2 ; i<= n; i++)
+            multi(i);
+    
+    reverse(factorial.begin() , factorial.end());
+    
+    // Size of Big Factorial \\  Number of digits of a factorial
+    cout<<factorial.size()<<endl;
+    
+    //Big Factorial
+    for(auto a : factorial)
+        cout<<a;
+return 0;
+}

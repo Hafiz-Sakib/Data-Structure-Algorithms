@@ -1,0 +1,62 @@
+/*
+  ax + by = c  is a linear Diophantine Equations .
+  To check , is it solveable or not?,  we first have to get the gcd of( a,b) .
+  If gcd of a & b divides C , then this equation is solveable.
+  
+  A LDE can have multiple Solution.
+  Note that if a or b is 0, then the problem only has one solution. We don't consider this case here.
+  
+  Base Case : 
+      a * x + b * y = gcd ( a,b ) = g   -------------(i)
+      g * 1 + 0 * 0 = g                 ------------(ii)
+   Compare i and ii , base case will found .
+   Link : https://cp-algorithms.com/algebra/linear-diophantine-equation.html
+   For All Solution : 
+            int x1 = x + ( k*b/g);
+            int y1 = y - ( k*a/g);
+            in where , k = (negative infinity , infinity)
+*/
+
+#include<bits/stdc++.h>
+#define ll long long
+#define pb push_back
+using namespace std;
+int egcd( int a , int b , int &x , int &y ){
+    if(b==0){
+        x = 1 ;
+        y = 0 ;
+        return a ;
+    }
+    int x1,y1;
+    int tm_g = egcd(b,a%b,x1,y1);
+    x = y1;
+    y = x1 - a/b * y1;
+    return tm_g;
+}
+
+bool check( int a , int b , int c){
+    if( c%__gcd(a,b)) return false ;
+    return true;
+}
+
+int main(){
+    int a,b,x,y,c;
+    cin>>a>>b>>c;
+    bool flag = check(a,b,c);
+    if(!flag){
+        cout<<"NO Solution"<<endl;
+    }
+    else{
+
+        int g = egcd(a,b,x,y);
+
+        x = x * (c/g);
+        y = y * (c/g);
+
+        cout<<x<<" "<<y<<"  gcd " <<g<<endl;
+    }
+
+
+return 0;
+}
+
